@@ -1,8 +1,8 @@
 {
     "name": "Akaunting",
     "short_name": "Akaunting",
-	"id": "Akaunting"
-	"packaging_format": 1
+	"id": "Akaunting",
+	"packaging_format": 1,
     "start_url": ".?utm_source=pwa",
     "display": "standalone",
     "theme_color": "#FFFFFF",

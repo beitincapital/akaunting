@@ -1,12 +1,58 @@
 {
     "name": "Akaunting",
     "short_name": "Akaunting",
+	"id": "Akaunting"
+	"packaging_format": 1
     "start_url": ".?utm_source=pwa",
     "display": "standalone",
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
     "orientation": "any",
-    "splash": {
+    "description": {
+        "en": "Open Source Accounting Software",
+        "fr": "Accounting Open Source"
+    },
+	"url": "http://akaunting.com",
+    "version": "2.0.13~ynh1",
+    "license": "free",
+    "maintainer": {
+        "name": "laith",
+        "email": "laith@laith.fr"
+    },
+    "requirements": {
+        "yunohost": ">= 2.4.0"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx",
+        "php5-fpm",
+        "mysql"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for Akaunting",
+                    "fr": "Choisissez un domaine pour Akaunting"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for Akaunting",
+                    "fr": "Choisissez un chemin pour Akaunting"
+                },
+                "example": "/webmail",
+                "default": "/webmail"
+            }
+        ]
+    }
+}
+	"splash": {
         "640x1136":  "public/img/icons/splash-640x1136.png",
         "750x1334":  "public/img/icons/splash-750x1334.png",
         "828x1792":  "public/img/icons/splash-828x1792.png",

@@ -3,12 +3,7 @@
     "short_name": "Akaunting",
 	"id": "Akaunting",
 	"packaging_format": 1,
-    "start_url": ".?utm_source=pwa",
-    "display": "standalone",
-    "theme_color": "#FFFFFF",
-    "background_color": "#FFFFFF",
-    "orientation": "any",
-    "description": {
+	"description": {
         "en": "Open Source Accounting Software",
         "fr": "Accounting Open Source"
     },
@@ -51,8 +46,12 @@
             }
         ]
     }
-}
-	"splash": {
+    "start_url": ".?utm_source=pwa",
+    "display": "standalone",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "orientation": "any",
+    	"splash": {
         "640x1136":  "public/img/icons/splash-640x1136.png",
         "750x1334":  "public/img/icons/splash-750x1334.png",
         "828x1792":  "public/img/icons/splash-828x1792.png",
